@@ -1,0 +1,10 @@
+import { Meta, StoryObj } from "@storybook/react";
+import { Tooltip } from "./Tooltip";
+declare const meta: Meta<typeof Tooltip>;
+export default meta;
+type Story = StoryObj<typeof meta>;
+export declare const Success: Story;
+export declare const Information: Story;
+export declare const WarninG: Story;
+export declare const Error: Story;
+export declare const Genral: Story;

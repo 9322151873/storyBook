@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.radio-item{
+  display: flex;
+  justify-content:center;
+  align-items: center;
+}
+.radio-item [type="radio"]{
+  display: none;
+}
+
+.radio-item + .radio-item{
+  margin-top: 15px;
+  
+}
+.radio-item .lable1{
+  display: block;
+
+  padding: 20px 60px;
+ 
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 18px;
+ 
+  min-width: 250px;
+  white-space: nowrap;
+  position: relative;
+  color: red;
+}
+
+.radio-item .lable1:after,
+.radio-item .lable1:before{
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+}
+
+.radio-item .lable1:after{
+  height: 13px;
+  width: 13px;
+  border:1.5px solid #100ceb;
+  left: 120px;
+  top:13px; 
+  
+}
+
+.radio-item .lable1:before{
+  background: #af3a17;
+  height: 9px;
+  width: 9px;
+  left: 123px;
+  top: 16px;
+  /* top: calc(50% - 5px); */
+  opacity: 0;
+  visibility: hidden;
+}
+.label_me{
+ position: relative;
+ left: -113px;
+
+}
+
+.radio-item [type="radio"]:checked ~ .lable1:before{
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+}
+
+
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.radio-item1{
+  
+  display: flex;
+  justify-content:center;
+  align-items: center;
+
+
+}
+.radio-item1 [type="radio"]{
+  display: none;
+}
+
+.radio-item1 + .radio-item{
+  margin-top: 15px;
+  
+}
+.radio-item1 .lable1{
+  display: block;
+
+  padding: 20px 60px;
+ 
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 18px;
+ 
+  min-width: 250px;
+  white-space: nowrap;
+  position: relative;
+  color: red;
+}
+
+.radio-item1 .lable1:after,
+.radio-item1 .lable1:before{
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+}
+
+.radio-item1 .lable1:after{
+  height: 13px;
+  width: 13px;
+  border:1.5px solid #161618;
+  left: 120px;
+  top:13px; 
+  
+}
+
+.radio-item1 .lable1:before{
+  background: #273ae6;
+  height: 9px;
+  width: 9px;
+  left: 123px;
+  top: 16px;
+  /* top: calc(50% - 5px); */
+  opacity: 0;
+  visibility: hidden;
+}
+.label_me{
+ position: relative;
+ left: -113px;
+
+}
+
+.radio-item1 [type="radio"]:checked ~ .lable1:before{
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+}

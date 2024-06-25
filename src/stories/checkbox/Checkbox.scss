@@ -1,0 +1,88 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Albert+Sans&display=swap'); */
+
+.labb{
+  position: relative;
+  left: 19px;
+  top: -18px;
+  /* font-family: sans-serif; */
+}
+.checkme {
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: white; /* Initial background color */
+    margin: 0;
+    font: inherit;
+    color: currentColor;
+    width: 1.15em;
+    height: 1.15em;
+    box-shadow: inset 0px 3px 6px #00000029;
+    border: 1px solid  #434DB8;
+    border-radius: 3px;
+    display: grid;
+    place-content: center;
+    width: 16px;
+height: 16px;
+}
+
+.check {
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: white; /* Initial background color */
+  margin: 0;
+  font: inherit;
+  color: currentColor;
+  width: 1.15em;
+  height: 1.15em;
+  box-shadow: inset 0px 3px 6px #00000029;
+  border: 1px solid  #3C3838;
+  border-radius: 3px;
+  display: grid;
+  place-content: center;
+  width: 16px;
+height: 16px;
+}
+.check:checked{
+  border: 1px solid  #434DB8;
+}
+.bbb{
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: white; /* Initial background color */
+  margin: 0;
+  font: inherit;
+  color: currentColor;
+  width: 1.15em;
+  height: 1.15em;
+  box-shadow: inset 0px 3px 6px #00000029;
+  border: 1px solid #D8D7D7;
+  border-radius: 3px;
+  display: grid;
+  place-content: center;
+  width: 16px;
+height: 16px;
+}
+
+input[type='checkbox']::before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+    transform: scale(0);
+    transform-origin: bottom left;
+    box-shadow: inset 1em 1em white;
+    background-color: CanvasText;
+}
+
+input[type='checkbox']:checked {
+    background-color: #434DB8; /* Change background color to green when checked */
+}
+
+input[type='checkbox']:checked::before {
+    transform: scale(1);
+}
+
+input[type='checkbox']:disabled {
+    --form-control-color: var(--form-control-disabled);
+    color: var(--form-control-disabled);
+    cursor: not-allowed;
+}
